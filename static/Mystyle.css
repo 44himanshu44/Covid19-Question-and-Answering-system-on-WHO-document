@@ -1,0 +1,70 @@
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.carousel-content{
+
+    position: absolute;
+    bottom: 60%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0, 0.6);
+
+}
+
+h2{
+    color: darkslategray;
+}
+
+p{
+    color: darkslategrey;
+
+}
+
+h5{
+    color: darkslategrey;
+
+}
+
+#question{
+    bottom: -20%;
+    right: 30%;
+    left: 2%;
+    text-align: center;
+
+}
+
+
+
+#answer{
+    bottom: -65%;
+    right: 30%;
+    left: 2%;
+
+}
+
+
+#question_area{
+    text-align: start;
+
+}
+
+
+body{
+    background-image: url('../static/virus_3.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+
+.text-shadow{
+    text-shadow: 0 1px 2px rgba(0,0,0, 0.6);
+}
+h6{
+    color: red;
+}

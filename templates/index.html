@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- import links from Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- importing custom style sheet -->
+
+    <link rel="stylesheet" href="../static/Mystyle.css">
+</head>
+
+<body>
+
+
+
+
+    <!-- Navbar start -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a href="index_2.html" class="btn btn-secondary btn-sm active" role="button" aria-pressed="true">Go Back</a>
+        </div>
+    </nav>
+
+
+
+    <!-- Main body start -->
+    <br>
+    <div class="container">
+        <div class="jumbotron text-shadow" style="padding: 2rem 1rem;">
+
+            <h2>Welcome to Corona Question Answering system</h2>
+            <p>
+                In Q&A when a question is asked the model tries to understand the context of both the question and the text. It then
+                tries to find the most relevant answer from the text with human like response. The text used here is WHO document on corona virus<br>
+                <h6>Note: It is not mere string matching! The answer takes some time to display (around 40 secs) as 
+                the model is running in the backgroud.</h6>
+            </p><br>
+
+
+            <!-- Form start -->
+            <form action="/main_page" method="GET">
+                <!-- select topic -->
+                <h7 >Sample Questions:</h7><br>
+                <select name="topic" class="btn btn-secondary dropdown-toggle">
+                    <option value="What is coronavirus?">What is coronavirus?</option>
+                    <option value="What is covid19?">What is covid19?</option>
+                    <option value="what are the symptoms for covid19?">what are the symptoms for covid19?</option>
+                    <option value="Who is at risk of developing severe illness?">Who is at risk of developing severe
+                        illness?</option>
+                    <option value="How long is the incubation period for COVID-19?">How long is the incubation period
+                        for COVID-19?</option>
+                    <option value="Are there any medicines or therapies that can prevent or cure COVID-19?">Are there
+                        any medicines or therapies that can prevent or cure COVID-19?</option>
+                    <option value="Can humans become infected with the COVID-19 from an animal source?">Can humans
+                        become infected with the COVID-19 from an animal source?</option>
+                    <option value="Can I catch COVID-19 from my pet?">Can I catch COVID-19 from my pet?</option>
+                    <option value="How long does the virus survive on surfaces?">How long does the virus survive on
+                        surfaces?</option>
+                    <option value="What measures should i take against covid19?">What measures should i take against
+                        covid19?</option>
+
+                </select>
+
+
+                
+                <button class="btn btn-outline-secondary"  type="submit">
+                    <i class="fa fa-search"></i></span>
+                </button>
+
+
+        </div>
+
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Question</span>
+            </div>
+            <input class="form-control" name="question" placeholder="Ask me anything" style="height: 50px;">
+            <div class="input-group-append">
+                <button type="submit" class="input-group-text"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        </form>
+
+        <br><br>
+        <div class="form-group">
+            <label style="color:white">Answer</label>
+            <textarea class="form-control" rows="3">{{ answer }}</textarea>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
