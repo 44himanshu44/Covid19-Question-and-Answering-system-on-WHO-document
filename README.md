@@ -45,7 +45,7 @@ pip install allennlp==1.0.0 allennlp-models==1.0.0
 
 ## 📖Note
 The python script downloads the model from google storage, if you want to run the script multiple times
-you can download the models in zip format from [here](https://storage.googleapis.com/allennlp-public-models/bidaf-elmo-model-2020.03.19.tar.gz) and set the path accordingly
+you can download the model in zip format from [here](https://storage.googleapis.com/allennlp-public-models/bidaf-elmo-model-2020.03.19.tar.gz) and set the path accordingly
 
 
 ## 📖Dataset
